@@ -2,7 +2,6 @@ const { verifyAdmin } = require('../middleware/auth');
 const express = require('express');
 const router = express.Router();
 const Order = require('../models/Order'); // We'll create this next
-const verifyAdmin = require('../middleware/verifyAdmin');
 
 // Get all orders (admin only)
 router.get('/', verifyAdmin, async (req, res) => {
