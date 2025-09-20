@@ -6,7 +6,6 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
-const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
