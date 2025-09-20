@@ -1,3 +1,4 @@
+const { verifyAdmin } = require('../middleware/auth');
 const express = require('express');
 const router = express.Router();
 const Product = require('../models/product');
